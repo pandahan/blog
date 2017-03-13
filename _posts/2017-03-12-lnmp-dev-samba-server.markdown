@@ -2,6 +2,10 @@
 layout: post
 title:  "LNMP开发--samba服务"
 date:  "2017-03-12 08:30:40 -0700"
+category: lnmp
+tags: samba
+keywords: samba
+description: ""
 ---
 
 
@@ -9,7 +13,7 @@ date:  "2017-03-12 08:30:40 -0700"
 
 本文以centos为例，配置samba服务。  
 
-###centos处理  
+### centos处理  
 1. centos安装samba  
 		`[gongmh@localhost ~]$ sudo yum install samba `  
 2. 添加samba用户  
@@ -21,11 +25,14 @@ date:  "2017-03-12 08:30:40 -0700"
 		`[gongmh@localhost ~]$ service smb status`
 5. 处理权限限制  
 
-###windows处理  
-1. 创建【映射网络驱动器】，配置  `\\ip\samba_name`
+### windows处理  
+1. 创建【映射网络驱动器】  
+	![pic](/source/pic/lnmp-samba-001.png)  
 
-2. 输入账号、密码连接服务  
-	![pic](https://cl.ly/2O2j0H2E2E42)  
-	![pic](https://cl.ly/3q0Y3o0D1A2x)  
+2. 配置  `\\ip\samba_name`  
+	![pic](/source/pic/lnmp-samba-002.png)  
+
+3. 输入账号、密码连接服务  
+	![pic](/source/pic/lnmp-samba-003.png)  
 
 (done)
