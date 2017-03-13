@@ -23,16 +23,16 @@ description: ""
 4. 启动samba服务  
 		`[gongmh@localhost ~]$ sudo service smb start`  
 		`[gongmh@localhost ~]$ service smb status`
-5. 处理权限限制  
+5. 处理权限限制  r
 
 ### windows处理  
 1. 创建【映射网络驱动器】  
-	![pic](../../../../../../source/pic/lnmp-samba-001.png)  
+	![pic](https://gongmh.github.io/source/blog/pic/lnmp-samba-001.png)  
 
 2. 配置  `\\ip\samba_name`  
-	![pic](../../../../../../source/pic/lnmp-samba-002.png)  
+	![pic](https://gongmh.github.io/source/blog/pic/lnmp-samba-002.png)  
 
 3. 输入账号、密码连接服务  
-	![pic](../../../../../../source/pic/lnmp-samba-003.png)  
+	![pic](https://gongmh.github.io/source/blog/pic/lnmp-samba-003.png)  
 
 (done)
