@@ -34,8 +34,12 @@ description: ""
 ```  
 首先`zvalue_value`是一个union的结构。相对于struct，union能够节省更多的内存空间，降低PHP的内存占用。另外，从结构中可以看到：`lval`用来保存整数值；`dval`用来保存浮点数值；`str`用来指向字符串的位置并记录长度；`ht`用来存放一个hash表，例如数组等；`obj`则用来存放对象。每个变量的值都存储在这个数据结构中。  
 
+实际定义一个变量的时候，PHP用的是`zval`，而`zval`又被定义为`_zval_struct`
+``` c  
+	 typedef struct _zval_struct zval;
+```
 
-为了节约内存，变量在PHP的内存中有垃圾回收、写时复制等，每个变量还存在引用计数，变量的结构  
+下面我们看`_zval_struct`的结果。为了节约内存，变量在PHP的内存中有垃圾回收、写时复制等，每个变量还存在引用计数，变量的结构如下  
 ``` c  
 	struct _zval_struct {
 		/* Variable information */
@@ -44,4 +48,5 @@ description: ""
 		zend_uchar type;    /* active type */
 		zend_uchar is_ref__gc;
 	};
-```
+```  
+
