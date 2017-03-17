@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My first blog!"
-date:   2017-03-16 08:30:40 -0700
+date:   2017-03-14 08:30:40 -0700
 categories: init
 ---
 
